@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Phone",
+      "price": 5000,
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "Computer",
+      "price": 5000,
+      "checked": true
+    },
+    {
+      "id": "3",
+      "name": "Printer",
+      "price": 5000,
+      "checked": true
+    },
+    {
+      "id": "4",
+      "name": "Laptop",
+      "price": 51000,
+      "checked": true
+    },
+    {
+      "id": "9bbb",
+      "name": "test",
+      "price": "500",
+      "checked": true
+    },
+    {
+      "id": "1d2c",
+      "name": "test",
+      "price": "500",
+      "checked": false
+    },
+    {
+      "id": "6093",
+      "name": "test",
+      "price": "500",
+      "checked": true
+    },
+    {
+      "id": "47fa",
+      "name": "Moroko",
+      "price": "200",
+      "checked": true
+    }
+  ]
+}

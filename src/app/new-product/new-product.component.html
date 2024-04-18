@@ -1,0 +1,26 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          {{productForm.value | json}}
+          <form action="" [formGroup]="productForm" (ngSubmit)="saveProduct()">
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-control" formControlName="name" id="name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="price">Price</label>
+              <input class="form-control" formControlName="price" id="price">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="checked">Checked</label>
+              <input type="checkbox" class="form-check-input" formControlName="checked" id="checked">
+            </div>
+            <button [disabled]="!productForm.valid" type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
