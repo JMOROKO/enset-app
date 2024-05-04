@@ -4,13 +4,13 @@
       "id": "1",
       "name": "Phone",
       "price": 5000,
-      "checked": false
+      "checked": true
     },
     {
       "id": "2",
       "name": "Computer",
       "price": 5000,
-      "checked": true
+      "checked": false
     },
     {
       "id": "3",
@@ -40,7 +40,7 @@
       "id": "6093",
       "name": "test",
       "price": "500",
-      "checked": true
+      "checked": false
     },
     {
       "id": "47fa",

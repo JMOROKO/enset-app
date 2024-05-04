@@ -1,8 +1,8 @@
 <div class="p-3">
   <div class="card">
     <div class="card-body">
-      {{keyWord}} <br>
-      <input type="text" [(ngModel)]="keyWord">
+      {{appState.productState.keyWord}} <br>
+      <input type="text" [(ngModel)]="appState.productState.keyWord">
       <button class="btn btn-outline-success" (click)="searchProduct()">
         Rechercher <!-- @TODO 2:14:45 -->
         <i class="bi bi-search"></i>
@@ -17,7 +17,7 @@
         </thead>
         <tbody>
         <!-- ici on utilise | async pour permettre à la variable de souscrire à l'observable -->
-          <tr *ngFor="let product of products">
+          <tr *ngFor="let product of appState.productState.products">
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
             <td>
@@ -36,9 +36,9 @@
       </table>
       <ul class="nav nav-pills">
         <!-- [].constructor(this.totalPages) permet de parcourir un tableau à une dimension de totalPages --->
-        <li *ngFor="let page of [].constructor(this.totalPages); let i = index">
+        <li *ngFor="let page of [].constructor(appState.productState.totalPages); let i = index">
           <button (click)="handleGoToPage(i+1)"
-                  [ngClass]="this.currentPage == i+1 ? 'btn-success' : 'btn-outline-success'"
+                  [ngClass]="this.appState.productState.currentPage == i+1 ? 'btn-success' : 'btn-outline-success'"
                   class="btn m-1">
             {{ (i+1) }}
           </button>
