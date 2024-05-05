@@ -19,3 +19,10 @@ ng new NomApp --no-standalone
 14- Comment récupérer les informations passé en paramètre d'une route
 15- Comment réaliser un formulaire de modification
 16- Comment modifier des informations
+17- Comment creer des service
+18- Comment creer et utiliser un app state
+19- Comment creer et utiliser des observable
+20- Comment creer et utiliser un intercepteur
+21- Comment installer JWT Decode
+  npm i jwt-decode
+22- Comment générer les guards

@@ -16,10 +16,20 @@ export class AppStateService {
     errorMessage: ""
   };
 
+  public authState: any = {
+    username: undefined,
+    roles: undefined,
+    isAuthenticated: false,
+    token: undefined
+  };
   constructor() { }
 
   public setProductState(state: any): void{
     //{...this.productState, ...state} permet de dire qu'il faut copier l'état actuelle et transmettre une copie des données passé en paramètre
     this.productState = {...this.productState, ...state};
+  }
+  public setAuthState(state: any): void{
+    //{...this.productState, ...state} permet de dire qu'il faut copier l'état actuelle et transmettre une copie des données passé en paramètre
+    this.authState = {...this.authState, ...state};
   }
 }
